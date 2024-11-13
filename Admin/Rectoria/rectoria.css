@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #9C5811;
+    --secondary-color: #F0E5D5;
+    --tertiary-color: #E1CDB5;
+    --quaternary-color: #D1B48E;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.bg-indigo-600 {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-indigo-700:hover {
+    background-color: var(--quaternary-color) !important;
+}
+
+.bg-indigo-500:hover {
+    background-color: var(--tertiary-color) !important;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--quaternary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--quaternary-color);
+    transform: translateY(-2px);
+}
+
+/* Estilos para los inputs de archivo */
+.file\:bg-indigo-50 {
+    background-color: var(--secondary-color) !important;
+}
+
+.file\:text-indigo-700 {
+    color: var(--primary-color) !important;
+}
+
+.hover\:file\:bg-indigo-100:hover {
+    background-color: var(--tertiary-color) !important;
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--tertiary-color);
+    padding: 1rem;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--tertiary-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+/* Estilos para la tabla */
+.table thead {
+    background-color: var(--secondary-color);
+}
+
+.table th {
+    color: var(--primary-color);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--secondary-color);
+}
+
+/* Estilos para los formularios */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(156, 88, 17, 0.25);
+}
+
+/* Estilos para los botones del formulario */
+.focus-visible\:outline-indigo-600:focus-visible {
+    outline-color: var(--primary-color) !important;
+}
+
+/* Estilos para los elementos interactivos */
+.ring-indigo-600 {
+    --tw-ring-color: var(--primary-color) !important;
+}
+
+.text-indigo-600 {
+    color: var(--primary-color) !important;
+}
+
+/* Animaciones */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Estilos para el header */
+.bg-white.shadow {
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+/* Estilos para los iconos */
+.fas {
+    color: inherit;
+}
+
+/* Estilos para los inputs del formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    margin-top: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(156, 88, 17, 0.2);
+}
